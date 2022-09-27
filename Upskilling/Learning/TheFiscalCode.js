@@ -101,7 +101,7 @@ function fiscalCode(person) {
 	
 	let dob = person.dob.split('/');
 	let tempDob = dob[dob.length-1].split('');
-	let dobCode =tempDob[tempDob.length-2] + tempDob[tempDob.length-1]; 
+	let dobCode = tempDob[tempDob.length-2] + tempDob[tempDob.length-1]; 
 	dobCode += months[dob[1]];
 
 	let genderCode = person.gender == 'M' ? (dob[0] < 10 ? '0' + dob[0] : dob[0]) : Number(dob[0]) + 40;
